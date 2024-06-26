@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2023.1/data/xilinx_vip/include" \
+"../../../../project_dct.gen/sources_1/ip/RAM_DCT/sim/RAM_DCT.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

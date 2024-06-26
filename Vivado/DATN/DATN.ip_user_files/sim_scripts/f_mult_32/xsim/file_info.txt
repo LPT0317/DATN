@@ -1,0 +1,2 @@
+f_mult_32.v,verilog,xil_defaultlib,../../../../DATN.gen/sources_1/ip/f_mult_32/sim/f_mult_32.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

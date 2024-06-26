@@ -1,0 +1,21 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CE/DAKTMT/Vivado/DATN/DATN.sim/sim_1/synth/func/xsim/testing_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_TEST
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module counter_0
+INFO: [VRFC 10-311] analyzing module read_ram
+INFO: [VRFC 10-311] analyzing module testing_module
+INFO: [VRFC 10-311] analyzing module RAM_TEST_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module RAM_TEST_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module RAM_TEST_blk_mem_gen_prim_width__parameterized0
+INFO: [VRFC 10-311] analyzing module RAM_TEST_blk_mem_gen_prim_width__parameterized1
+INFO: [VRFC 10-311] analyzing module RAM_TEST_blk_mem_gen_prim_width__parameterized2
+INFO: [VRFC 10-311] analyzing module RAM_TEST_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module RAM_TEST_blk_mem_gen_prim_wrapper_init__parameterized0
+INFO: [VRFC 10-311] analyzing module RAM_TEST_blk_mem_gen_prim_wrapper_init__parameterized1
+INFO: [VRFC 10-311] analyzing module RAM_TEST_blk_mem_gen_prim_wrapper_init__parameterized2
+INFO: [VRFC 10-311] analyzing module RAM_TEST_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module RAM_TEST_blk_mem_gen_v8_4_6
+INFO: [VRFC 10-311] analyzing module RAM_TEST_blk_mem_gen_v8_4_6_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sim_1/new/testing_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testing_tb

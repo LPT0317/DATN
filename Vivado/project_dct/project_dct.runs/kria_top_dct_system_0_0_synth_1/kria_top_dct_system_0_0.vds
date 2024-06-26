@@ -1,0 +1,257 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Thu Mar 21 20:29:50 2024
+# Process ID: 44724
+# Current directory: D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/kria_top_dct_system_0_0_synth_1
+# Command line: vivado.exe -log kria_top_dct_system_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kria_top_dct_system_0_0.tcl
+# Log file: D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/kria_top_dct_system_0_0_synth_1/kria_top_dct_system_0_0.vds
+# Journal file: D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/kria_top_dct_system_0_0_synth_1\vivado.jou
+# Running On: LAPTOP-4DC9UOE4, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17024 MB
+#-----------------------------------------------------------
+source kria_top_dct_system_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1940.305 ; gain = 162.047
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: kria_top_dct_system_0_0
+Command: synth_design -top kria_top_dct_system_0_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24604
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3331.066 ; gain = 344.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kria_top_dct_system_0_0' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_dct_system_0_0/synth/kria_top_dct_system_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'dct_system' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/dct_system.v:23]
+INFO: [Synth 8-6157] synthesizing module 'load_bram' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/load_bram.sv:23]
+INFO: [Synth 8-226] default block is never used [D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/load_bram.sv:68]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/counter.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/counter.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'load_bram' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/load_bram.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'dct_system' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/dct_system.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_dct_system_0_0' (0#1) [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_dct_system_0_0/synth/kria_top_dct_system_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3426.461 ; gain = 440.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3444.387 ; gain = 458.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3444.387 ; gain = 458.238
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3444.387 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3535.695 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 3553.570 ; gain = 17.875
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3553.570 ; gain = 567.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3553.570 ; gain = 567.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3553.570 ; gain = 567.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'load_bram'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+                    READ |                               01 |                               01
+                    CONT |                               10 |                               10
+                   SLEEP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'load_bram'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3553.570 ; gain = 567.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/load_data2ram/addr_ram_reg' and it is trimmed from '32' to '30' bits. [D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/load_bram.sv:50]
+INFO: [Synth 8-3917] design kria_top_dct_system_0_0 has port bram0_en driven by constant 1
+INFO: [Synth 8-3917] design kria_top_dct_system_0_0 has port bram0_we[3] driven by constant 0
+INFO: [Synth 8-3917] design kria_top_dct_system_0_0 has port bram0_we[2] driven by constant 0
+INFO: [Synth 8-3917] design kria_top_dct_system_0_0 has port bram0_we[1] driven by constant 0
+INFO: [Synth 8-3917] design kria_top_dct_system_0_0 has port bram0_we[0] driven by constant 0
+INFO: [Synth 8-3917] design kria_top_dct_system_0_0 has port bram0_addr[1] driven by constant 0
+INFO: [Synth 8-3917] design kria_top_dct_system_0_0 has port bram0_addr[0] driven by constant 0
+INFO: [Synth 8-3917] design kria_top_dct_system_0_0 has port bram0_rst driven by constant 0
+INFO: [Synth 8-3917] design kria_top_dct_system_0_0 has port bram1_en driven by constant 1
+INFO: [Synth 8-3917] design kria_top_dct_system_0_0 has port bram1_addr[1] driven by constant 0
+INFO: [Synth 8-3917] design kria_top_dct_system_0_0 has port bram1_addr[0] driven by constant 0
+INFO: [Synth 8-3917] design kria_top_dct_system_0_0 has port bram1_rst driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3553.570 ; gain = 567.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 3987.250 ; gain = 1001.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 3987.250 ; gain = 1001.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 3997.480 ; gain = 1011.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 4013.254 ; gain = 1027.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 4013.254 ; gain = 1027.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 4013.254 ; gain = 1027.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 4013.254 ; gain = 1027.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 4013.254 ; gain = 1027.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 4013.254 ; gain = 1027.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |     6|
+|2     |LUT1   |     2|
+|3     |LUT2   |     2|
+|4     |LUT3   |    18|
+|5     |LUT4   |     5|
+|6     |LUT5   |    14|
+|7     |LUT6   |     4|
+|8     |FDRE   |    64|
+|9     |FDSE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 4013.254 ; gain = 1027.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 4013.254 ; gain = 917.922
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 4013.254 ; gain = 1027.105
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4025.336 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4051.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 2f1adf77
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 4051.148 ; gain = 2038.277
+INFO: [Common 17-1381] The checkpoint 'D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/kria_top_dct_system_0_0_synth_1/kria_top_dct_system_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP kria_top_dct_system_0_0, cache-ID = c0b731d8eb491ce0
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/kria_top_dct_system_0_0_synth_1/kria_top_dct_system_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file kria_top_dct_system_0_0_utilization_synth.rpt -pb kria_top_dct_system_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 21 20:30:58 2024...

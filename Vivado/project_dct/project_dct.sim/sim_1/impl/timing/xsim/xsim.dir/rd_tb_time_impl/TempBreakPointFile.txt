@@ -1,0 +1,5 @@
+Breakpoint File Version 1.0
+54,true,"D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv"
+70,true,"D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv"
+76,true,"D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv"
+81,true,"D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv"

@@ -1,0 +1,1 @@
+multiply.vhd,vhdl,xil_defaultlib,../../../../DATN.gen/sources_1/ip/multiply_1/sim/multiply.vhd,

@@ -1,0 +1,649 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Fri May 17 15:47:08 2024
+# Process ID: 42740
+# Current directory: D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1
+# Command line: vivado.exe -log kria_top_dct_processor_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kria_top_dct_processor_0_1.tcl
+# Log file: D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/kria_top_dct_processor_0_1.vds
+# Journal file: D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1\vivado.jou
+# Running On: LAPTOP-4DC9UOE4, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17024 MB
+#-----------------------------------------------------------
+source kria_top_dct_processor_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1940.172 ; gain = 160.934
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/CE/DAKTMT/Vivado/ip_repo/register_bank_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+Command: synth_design -top kria_top_dct_processor_0_1 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28096
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3334.039 ; gain = 344.152
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kria_top_dct_processor_0_1' [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/bd/kria_top/ip/kria_top_dct_processor_0_1/synth/kria_top_dct_processor_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'dct_processor' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dct_system' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_system.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dct_control' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dct_control' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'read_bram' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_bram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'read_bram' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_bram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dct_register' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dct_register' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu_butterfly' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:23]
+INFO: [Synth 8-6157] synthesizing module 'f_add_32' [D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/.Xil/Vivado-42740-LAPTOP-4DC9UOE4/realtime/f_add_32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'f_add_32' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/.Xil/Vivado-42740-LAPTOP-4DC9UOE4/realtime/f_add_32_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_result_tvalid' of module 'f_add_32' is unconnected for instance 'add_block' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:57]
+WARNING: [Synth 8-7023] instance 'add_block' of module 'f_add_32' has 6 connections declared, but only 5 given [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:57]
+INFO: [Synth 8-6157] synthesizing module 'f_sub_32' [D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/.Xil/Vivado-42740-LAPTOP-4DC9UOE4/realtime/f_sub_32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'f_sub_32' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/.Xil/Vivado-42740-LAPTOP-4DC9UOE4/realtime/f_sub_32_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_result_tvalid' of module 'f_sub_32' is unconnected for instance 'sub_block' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:64]
+WARNING: [Synth 8-7023] instance 'sub_block' of module 'f_sub_32' has 6 connections declared, but only 5 given [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:64]
+WARNING: [Synth 8-7071] port 'm_axis_result_tvalid' of module 'f_add_32' is unconnected for instance 'add_block' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:57]
+WARNING: [Synth 8-7023] instance 'add_block' of module 'f_add_32' has 6 connections declared, but only 5 given [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:57]
+WARNING: [Synth 8-7071] port 'm_axis_result_tvalid' of module 'f_sub_32' is unconnected for instance 'sub_block' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:64]
+WARNING: [Synth 8-7023] instance 'sub_block' of module 'f_sub_32' has 6 connections declared, but only 5 given [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:64]
+WARNING: [Synth 8-7071] port 'm_axis_result_tvalid' of module 'f_add_32' is unconnected for instance 'add_block' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:57]
+WARNING: [Synth 8-7023] instance 'add_block' of module 'f_add_32' has 6 connections declared, but only 5 given [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:57]
+WARNING: [Synth 8-7071] port 'm_axis_result_tvalid' of module 'f_sub_32' is unconnected for instance 'sub_block' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:64]
+WARNING: [Synth 8-7023] instance 'sub_block' of module 'f_sub_32' has 6 connections declared, but only 5 given [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:64]
+WARNING: [Synth 8-7071] port 'm_axis_result_tvalid' of module 'f_add_32' is unconnected for instance 'add_block' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:57]
+WARNING: [Synth 8-7023] instance 'add_block' of module 'f_add_32' has 6 connections declared, but only 5 given [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:57]
+WARNING: [Synth 8-7071] port 'm_axis_result_tvalid' of module 'f_sub_32' is unconnected for instance 'sub_block' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:64]
+WARNING: [Synth 8-7023] instance 'sub_block' of module 'f_sub_32' has 6 connections declared, but only 5 given [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'alu_butterfly' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_butterfly.v:23]
+INFO: [Synth 8-6157] synthesizing module 'read_rom' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_rom.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'read_rom' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_rom.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu_mac' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_mac.v:23]
+INFO: [Synth 8-6157] synthesizing module 'f_mult_32' [D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/.Xil/Vivado-42740-LAPTOP-4DC9UOE4/realtime/f_mult_32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'f_mult_32' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/.Xil/Vivado-42740-LAPTOP-4DC9UOE4/realtime/f_mult_32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'alu_mac' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_mac.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wr_dct_ram' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/wr_dct_ram.v:23]
+INFO: [Synth 8-226] default block is never used [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/wr_dct_ram.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'wr_dct_ram' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/wr_dct_ram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'read_ram' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_ram.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'read_ram' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_ram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu_const' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_const.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu_const' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/alu_const.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wr_dct_bram' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/wr_dct_bram.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wr_dct_bram' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/wr_dct_bram.v:23]
+WARNING: [Synth 8-7071] port 'o_finish' of module 'wr_dct_bram' is unconnected for instance 'wr_dct_stage_4' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_system.v:243]
+WARNING: [Synth 8-7023] instance 'wr_dct_stage_4' of module 'wr_dct_bram' has 10 connections declared, but only 9 given [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_system.v:243]
+INFO: [Synth 8-6157] synthesizing module 'mux_bram' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/mux_bram.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux_bram' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/mux_bram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'switch_ram' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/switch_ram.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'switch_ram' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/switch_ram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCT_RAM' [D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/.Xil/Vivado-42740-LAPTOP-4DC9UOE4/realtime/DCT_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DCT_RAM' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/.Xil/Vivado-42740-LAPTOP-4DC9UOE4/realtime/DCT_RAM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'COEFF_ROM' [D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/.Xil/Vivado-42740-LAPTOP-4DC9UOE4/realtime/COEFF_ROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'COEFF_ROM' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/.Xil/Vivado-42740-LAPTOP-4DC9UOE4/realtime/COEFF_ROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dct_system' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_system.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dct_processor' (0#1) [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_processor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_dct_processor_0_1' (0#1) [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/bd/kria_top/ip/kria_top_dct_processor_0_1/synth/kria_top_dct_processor_0_1.v:53]
+WARNING: [Synth 8-3848] Net o_finish in module/entity wr_dct_bram does not have driver. [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/wr_dct_bram.v:38]
+WARNING: [Synth 8-7129] Port o_finish in module wr_dct_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr_block in module wr_dct_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[31] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[8] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[7] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[6] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[5] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[4] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[3] in module dct_register is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3436.203 ; gain = 446.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 3454.117 ; gain = 464.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 3454.117 ; gain = 464.230
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 3454.117 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/COEFF_ROM/COEFF_ROM/COEFF_ROM_in_context.xdc] for cell 'inst/dct_system_inst/coeff_mac'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/COEFF_ROM/COEFF_ROM/COEFF_ROM_in_context.xdc] for cell 'inst/dct_system_inst/coeff_mac'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/DCT_RAM/DCT_RAM/DCT_RAM_in_context.xdc] for cell 'inst/dct_system_inst/even_stage_2'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/DCT_RAM/DCT_RAM/DCT_RAM_in_context.xdc] for cell 'inst/dct_system_inst/even_stage_2'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/DCT_RAM/DCT_RAM/DCT_RAM_in_context.xdc] for cell 'inst/dct_system_inst/odd_stage_2'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/DCT_RAM/DCT_RAM/DCT_RAM_in_context.xdc] for cell 'inst/dct_system_inst/odd_stage_2'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[0].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[0].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[1].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[1].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[2].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[2].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[3].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[3].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[4].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[4].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[5].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[5].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[6].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[6].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[7].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk2[7].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[0].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[0].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[1].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[1].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[2].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[2].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[3].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[3].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[4].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[4].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[5].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[5].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[6].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[6].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[7].multi_blk'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk2[7].multi_blk'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/const_stage_4/multi_even'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/const_stage_4/multi_even'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/const_stage_4/multi_odd'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_mult_32/f_mult_32/f_mult_32_in_context.xdc] for cell 'inst/dct_system_inst/const_stage_4/multi_odd'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[0].add_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[0].add_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[1].add_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[1].add_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[2].add_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[2].add_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[3].add_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[3].add_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk3[0].add_blk_0'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk3[0].add_blk_0'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk3[1].add_blk_0'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk3[1].add_blk_0'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk3[2].add_blk_0'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk3[2].add_blk_0'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk3[3].add_blk_0'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk3[3].add_blk_0'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk4[0].add_final'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk4[0].add_final'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk4[1].add_final'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_2/genblk4[1].add_final'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[0].add_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[0].add_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[1].add_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[1].add_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[2].add_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[2].add_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[3].add_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[3].add_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk3[0].add_blk_0'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk3[0].add_blk_0'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk3[1].add_blk_0'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk3[1].add_blk_0'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk3[2].add_blk_0'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk3[2].add_blk_0'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk3[3].add_blk_0'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk3[3].add_blk_0'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk4[0].add_final'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk4[0].add_final'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk4[1].add_final'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_add_32/f_add_32/f_add_32_in_context.xdc] for cell 'inst/dct_system_inst/mac_stage_4/genblk4[1].add_final'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[0].sub_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[0].sub_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[1].sub_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[1].sub_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[2].sub_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[2].sub_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[3].sub_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_1/genblk1[3].sub_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[0].sub_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[0].sub_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[1].sub_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[1].sub_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[2].sub_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[2].sub_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[3].sub_block'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/ip/f_sub_32/f_sub_32/f_sub_32_in_context.xdc] for cell 'inst/dct_system_inst/butterfly_stage_3/genblk1[3].sub_block'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/bd/kria_top/ip/kria_top_dct_processor_0_1/kria_top_dct_processor_0_1_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3575.434 ; gain = 0.047
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/DATN/DATN.gen/sources_1/bd/kria_top/ip/kria_top_dct_processor_0_1/kria_top_dct_processor_0_1_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3575.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.091 . Memory (MB): peak = 3575.434 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3575.434 ; gain = 585.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 3575.434 ; gain = 585.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/dont_touch.xdc, line 24).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/coeff_mac. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/even_stage_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/odd_stage_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk2[0].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk2[0].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk2[1].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk2[1].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk2[2].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk2[2].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk2[3].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk2[3].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk2[4].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk2[4].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk2[5].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk2[5].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk2[6].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk2[6].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk2[7].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk2[7].multi_blk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/const_stage_4/multi_even. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/const_stage_4/multi_odd. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_1/\genblk1[0].add_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_3/\genblk1[0].add_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_1/\genblk1[1].add_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_3/\genblk1[1].add_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_1/\genblk1[2].add_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_3/\genblk1[2].add_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_1/\genblk1[3].add_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_3/\genblk1[3].add_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk3[0].add_blk_0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk3[0].add_blk_0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk3[1].add_blk_0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk3[1].add_blk_0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk3[2].add_blk_0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk3[2].add_blk_0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk3[3].add_blk_0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk3[3].add_blk_0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk4[0].add_final . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk4[0].add_final . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_2/\genblk4[1].add_final . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/mac_stage_4/\genblk4[1].add_final . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_1/\genblk1[0].sub_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_3/\genblk1[0].sub_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_1/\genblk1[1].sub_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_3/\genblk1[1].sub_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_1/\genblk1[2].sub_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_3/\genblk1[2].sub_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_1/\genblk1[3].sub_block . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dct_system_inst/butterfly_stage_3/\genblk1[3].sub_block . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3575.434 ; gain = 585.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dct_control'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'read_rom'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'wr_dct_ram'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'read_ram'
+WARNING: [Synth 8-327] inferring latch for variable 'load_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_control.v:60]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                            00001 |                              000
+                    READ |                            00010 |                              001
+                    WAIT |                            00100 |                              010
+                   CHECK |                            01000 |                              011
+                  FINISH |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'dct_control'
+WARNING: [Synth 8-327] inferring latch for variable 'clr_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_control.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'valid_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_control.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'bram_mode_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/dct_control.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'valid_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_bram.v:80]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_bram.v:78]
+WARNING: [Synth 8-327] inferring latch for variable 'inc_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_bram.v:79]
+WARNING: [Synth 8-327] inferring latch for variable 'inc_block_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_bram.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'valid_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_rom.v:67]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+                    READ |                               01 |                               01
+                    CONT |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'read_rom'
+WARNING: [Synth 8-327] inferring latch for variable 'clr_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_rom.v:65]
+WARNING: [Synth 8-327] inferring latch for variable 'inc_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_rom.v:66]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+                   WRITE |                               01 |                               01
+                    STOP |                               10 |                               11
+                    CONT |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'wr_dct_ram'
+WARNING: [Synth 8-327] inferring latch for variable 'vld_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_ram.v:55]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                              000 |                              000
+                   INC_0 |                              001 |                              100
+                   VALID |                              010 |                              101
+                   CHECK |                              011 |                              001
+                    STOP |                              100 |                              011
+                INC_ADDR |                              101 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'read_ram'
+WARNING: [Synth 8-327] inferring latch for variable 'clr_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_ram.v:69]
+WARNING: [Synth 8-327] inferring latch for variable 'inc_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_ram.v:68]
+WARNING: [Synth 8-327] inferring latch for variable 'inc_read_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/read_ram.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'valid_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/wr_dct_bram.v:85]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/wr_dct_bram.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'inc_reg' [D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sources_1/new/wr_dct_bram.v:84]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3575.434 ; gain = 585.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 3     
+	              128 Bit    Registers := 4     
+	               32 Bit    Registers := 31    
+	               16 Bit    Registers := 7     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   6 Input  256 Bit        Muxes := 1     
+	   2 Input  256 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   6 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 13    
+	   3 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 10    
+	   6 Input    1 Bit        Muxes := 14    
+	   3 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP finish0, operation Mode is: (C:0xffffffffffff)+A2*B.
+DSP Report: register count_block/dout_reg is absorbed into DSP finish0.
+DSP Report: operator finish0 is absorbed into DSP finish0.
+DSP Report: operator finish1 is absorbed into DSP finish0.
+DSP Report: Generating DSP stop0, operation Mode is: -(C:0x1)+(D'+(A:0x1))*B-1.
+DSP Report: register count_block/dout_reg is absorbed into DSP stop0.
+DSP Report: operator stop0 is absorbed into DSP stop0.
+DSP Report: operator stop1 is absorbed into DSP stop0.
+DSP Report: operator stop2 is absorbed into DSP stop0.
+DSP Report: Generating DSP stop0, operation Mode is: (C:0xffffffffffff)+A*B.
+DSP Report: operator stop0 is absorbed into DSP stop0.
+DSP Report: operator stop1 is absorbed into DSP stop0.
+WARNING: [Synth 8-7129] Port bram_wr_addr[31] in module mux_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_wr_addr[30] in module mux_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_finish in module wr_dct_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr_block in module wr_dct_bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[0] in module wr_dct_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[31] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[8] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[7] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[6] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[5] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[4] in module dct_register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[3] in module dct_register is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 3575.434 ; gain = 585.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping               | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|read_bram   | (C:0xffffffffffff)+A2*B   | 16     | 16     | 32     | -      | 32     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|read_bram   | -(C:0x1)+(D'+(A:0x1))*B-1 | 1      | 16     | 48     | 16     | 32     | 0    | 0    | 0    | 1    | 0     | 0    | 0    | 
+|wr_dct_bram | (C:0xffffffffffff)+A*B    | 16     | 16     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 4020.863 ; gain = 1030.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 4072.629 ; gain = 1082.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 4072.629 ; gain = 1082.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 4072.629 ; gain = 1082.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 4072.629 ; gain = 1082.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 4072.629 ; gain = 1082.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 4072.629 ; gain = 1082.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 4072.629 ; gain = 1082.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 4072.629 ; gain = 1082.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|read_bram   | not(C)+D'+A*B | 1      | 7      | 1      | 16     | 32     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|wr_dct_bram | C+A*B         | 16     | 7      | 48     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |DCT_RAM       |         2|
+|2     |COEFF_ROM     |         1|
+|3     |f_add_32      |        20|
+|4     |f_sub_32      |         8|
+|5     |f_mult_32     |        18|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |COEFF_ROM       |     1|
+|2     |DCT_RAM         |     2|
+|4     |f_add           |     1|
+|5     |f_add_32        |    19|
+|24    |f_mult          |     1|
+|25    |f_mult_32       |    17|
+|42    |f_sub           |     1|
+|43    |f_sub_32        |     7|
+|50    |CARRY8          |    16|
+|51    |DSP_ALU         |     2|
+|52    |DSP_A_B_DATA    |     2|
+|53    |DSP_C_DATA      |     2|
+|54    |DSP_MULTIPLIER  |     2|
+|56    |DSP_M_DATA      |     2|
+|57    |DSP_OUTPUT      |     2|
+|58    |DSP_PREADD      |     2|
+|59    |DSP_PREADD_DATA |     2|
+|61    |LUT1            |    11|
+|62    |LUT2            |    67|
+|63    |LUT3            |   304|
+|64    |LUT4            |    78|
+|65    |LUT5            |    58|
+|66    |LUT6            |    84|
+|67    |FDRE            |  2428|
+|68    |FDSE            |     2|
+|69    |LD              |    21|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 4072.629 ; gain = 1082.742
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 53 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:51 . Memory (MB): peak = 4072.629 ; gain = 961.426
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 4072.629 ; gain = 1082.742
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 4072.629 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4090.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 23 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 2 instances
+  LD => LDCE: 21 instances
+
+Synth Design complete | Checksum: ee9b5562
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:22 . Memory (MB): peak = 4090.438 ; gain = 2075.191
+INFO: [Coretcl 2-1174] Renamed 33 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/CE/DAKTMT/Vivado/DATN/DATN.runs/kria_top_dct_processor_0_1_synth_1/kria_top_dct_processor_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file kria_top_dct_processor_0_1_utilization_synth.rpt -pb kria_top_dct_processor_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 17 15:48:55 2024...

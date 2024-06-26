@@ -1,0 +1,50 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dct_tb.dct_tb.dct_bram.inst.\native_mem_mapped_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dct_tb.dct_tb.dct_system_inst.coeff_mac.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_6 collision detected at time: 140000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 140000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 180000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 1, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 180000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 1, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 220000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 2, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 220000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 2, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 260000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 3, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 260000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 3, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 300000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 4, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 300000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 4, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 340000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 5, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 340000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 5, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 380000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 6, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 380000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 6, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 420000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 7, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 420000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 7, B  read address: 0
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dct_tb.dct_tb.dct_bram.inst.\native_mem_mapped_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module dct_tb.dct_tb.dct_system_inst.coeff_mac.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_6 collision detected at time: 140000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 140000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 180000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 1, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 180000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 1, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 220000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 2, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 220000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 2, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 260000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 3, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 260000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 3, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 300000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 4, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 300000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 4, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 340000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 5, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 340000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 5, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 380000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 6, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 380000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 6, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 420000, Instance: dct_tb.dct_tb.dct_system_inst.even_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 7, B  read address: 0
+blk_mem_gen_v8_4_6 collision detected at time: 420000, Instance: dct_tb.dct_tb.dct_system_inst.odd_stage_2.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst , A write address: 7, B  read address: 0
+$finish called at time : 1510 ns : File "D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sim_1/new/dct_tb.v" Line 67

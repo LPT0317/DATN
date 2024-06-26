@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+$finish called at time : 270 ns : File "D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sim_1/new/rd_tb.sv" Line 64
+Stopped at time : 0 fs : File "D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv" Line 53
+Stopped at time : 10 ns : File "D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv" Line 54
+Stopped at time : 20 ns : File "D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv" Line 81
+Stopped at time : 80 ns : File "D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv" Line 81
+Stopped at time : 10 ns : File "D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv" Line 54
+Stopped at time : 20 ns : File "D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv" Line 81
+Stopped at time : 80 ns : File "D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv" Line 81
+Stopped at time : 90 ns : File "D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv" Line 81
+Stopped at time : 100 ns : File "D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sources_1/new/rd_bram.sv" Line 70

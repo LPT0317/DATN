@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../DATN.gen/sources_1/ip/u_mult_16/sim/u_mult_16.vhd" \
+
+# Do not sort compile order
+nosort

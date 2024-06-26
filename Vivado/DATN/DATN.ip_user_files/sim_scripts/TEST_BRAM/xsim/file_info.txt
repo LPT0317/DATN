@@ -1,0 +1,2 @@
+TEST_BRAM.v,verilog,xil_defaultlib,../../../../DATN.gen/sources_1/ip/TEST_BRAM/sim/TEST_BRAM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

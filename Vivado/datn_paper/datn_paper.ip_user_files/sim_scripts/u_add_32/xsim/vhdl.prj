@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../datn_paper.gen/sources_1/ip/u_add_32/sim/u_add_32.vhd" \
+
+# Do not sort compile order
+nosort

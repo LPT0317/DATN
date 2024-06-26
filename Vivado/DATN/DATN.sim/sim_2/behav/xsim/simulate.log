@@ -1,0 +1,22 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sgp_tb.sgp_tb.cover_bram.inst.\native_mem_mapped_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sgp_tb.sgp_tb.secret_bram.inst.\native_mem_mapped_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$finish called at time : 930 ns : File "D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sim_2/new/sgp_tb.v" Line 53
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sgp_tb.sgp_tb.cover_bram.inst.\native_mem_mapped_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sgp_tb.sgp_tb.secret_bram.inst.\native_mem_mapped_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$finish called at time : 930 ns : File "D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sim_2/new/sgp_tb.v" Line 53
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sgp_tb.sgp_tb.cover_bram.inst.\native_mem_mapped_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module sgp_tb.sgp_tb.secret_bram.inst.\native_mem_mapped_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$finish called at time : 930 ns : File "D:/CE/DAKTMT/Vivado/DATN/DATN.srcs/sim_2/new/sgp_tb.v" Line 53

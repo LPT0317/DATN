@@ -1,0 +1,387 @@
+
+*** Running vivado
+    with args -log kria_top_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source kria_top_wrapper.tcl
+
+
+
+****** Vivado v2023.1.1 (64-bit)
+  **** SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+  **** IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+  **** SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source kria_top_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1941.270 ; gain = 163.254
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2024.449 ; gain = 83.180
+Command: read_checkpoint -auto_incremental -incremental D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/utils_1/imports/synth_1/kria_top_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/utils_1/imports/synth_1/kria_top_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top kria_top_wrapper -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34116
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3388.875 ; gain = 344.801
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kria_top_wrapper' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/hdl/kria_top_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'kria_top' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:13]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_axi_bram_ctrl_0_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_axi_bram_ctrl_0_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_axi_bram_ctrl_0_bram_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_axi_bram_ctrl_0_bram_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_bram_ctrl_0_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'kria_top_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:325]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'kria_top_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:325]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0_bram' of module 'kria_top_axi_bram_ctrl_0_bram_0' has 16 connections declared, but only 14 given [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:325]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_axi_bram_ctrl_0_1' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_axi_bram_ctrl_0_1' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_axi_bram_ctrl_1_bram_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_bram_ctrl_1_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_axi_bram_ctrl_1_bram_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_bram_ctrl_1_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'kria_top_axi_bram_ctrl_1_bram_0' is unconnected for instance 'axi_bram_ctrl_1_bram' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:381]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_1_bram' of module 'kria_top_axi_bram_ctrl_1_bram_0' has 8 connections declared, but only 7 given [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:381]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_axi_bram_ctrl_1_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_bram_ctrl_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_axi_bram_ctrl_1_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_bram_ctrl_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_axi_bram_ctrl_2_bram_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_bram_ctrl_2_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_axi_bram_ctrl_2_bram_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_bram_ctrl_2_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'doutb' of module 'kria_top_axi_bram_ctrl_2_bram_0' is unconnected for instance 'axi_bram_ctrl_2_bram' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:430]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'kria_top_axi_bram_ctrl_2_bram_0' is unconnected for instance 'axi_bram_ctrl_2_bram' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:430]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'kria_top_axi_bram_ctrl_2_bram_0' is unconnected for instance 'axi_bram_ctrl_2_bram' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:430]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_2_bram' of module 'kria_top_axi_bram_ctrl_2_bram_0' has 16 connections declared, but only 13 given [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:430]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_axi_cdma_0_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_cdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_axi_cdma_0_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_cdma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'cdma_introut' of module 'kria_top_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:444]
+WARNING: [Synth 8-7071] port 'cdma_tvect_out' of module 'kria_top_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:444]
+WARNING: [Synth 8-7023] instance 'axi_cdma_0' of module 'kria_top_axi_cdma_0_0' has 50 connections declared, but only 48 given [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:444]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_axi_smc_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_axi_smc_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M01_AXI_awqos' of module 'kria_top_axi_smc_0' is unconnected for instance 'axi_smc' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:493]
+WARNING: [Synth 8-7071] port 'M01_AXI_arqos' of module 'kria_top_axi_smc_0' is unconnected for instance 'axi_smc' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:493]
+WARNING: [Synth 8-7071] port 'M02_AXI_awqos' of module 'kria_top_axi_smc_0' is unconnected for instance 'axi_smc' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:493]
+WARNING: [Synth 8-7071] port 'M02_AXI_arqos' of module 'kria_top_axi_smc_0' is unconnected for instance 'axi_smc' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:493]
+WARNING: [Synth 8-7071] port 'M03_AXI_awqos' of module 'kria_top_axi_smc_0' is unconnected for instance 'axi_smc' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:493]
+WARNING: [Synth 8-7071] port 'M03_AXI_arqos' of module 'kria_top_axi_smc_0' is unconnected for instance 'axi_smc' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:493]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'kria_top_axi_smc_0' has 167 connections declared, but only 161 given [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:493]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_dct_system_0_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_dct_system_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_dct_system_0_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_dct_system_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_ps8_0_axi_periph_0' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:880]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_L84J6Z' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:1432]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_L84J6Z' (0#1) [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:1432]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_199X13E' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:1557]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_199X13E' (0#1) [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:1557]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1EAIA95' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:1703]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_auto_ds_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_auto_ds_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_auto_pc_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_auto_pc_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1EAIA95' (0#1) [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:1703]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_xbar_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_xbar_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_ps8_0_axi_periph_0' (0#1) [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:880]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_reg_bank_0_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_reg_bank_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_reg_bank_0_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_reg_bank_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'dct_size' of module 'kria_top_reg_bank_0_0' is unconnected for instance 'reg_bank_0' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:753]
+WARNING: [Synth 8-7071] port 'rd_ff' of module 'kria_top_reg_bank_0_0' is unconnected for instance 'reg_bank_0' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:753]
+WARNING: [Synth 8-7071] port 'ram_addr' of module 'kria_top_reg_bank_0_0' is unconnected for instance 'reg_bank_0' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:753]
+WARNING: [Synth 8-7023] instance 'reg_bank_0' of module 'kria_top_reg_bank_0_0' has 40 connections declared, but only 37 given [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:753]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_rst_ps8_0_99M_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_rst_ps8_0_99M_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_rst_ps8_0_99M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'kria_top_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:791]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'kria_top_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:791]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'kria_top_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:791]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'kria_top_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:791]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'kria_top_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:791]
+INFO: [Synth 8-6157] synthesizing module 'kria_top_zynq_ultra_ps_e_0_0' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_zynq_ultra_ps_e_0_0' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/.Xil/Vivado-39556-LAPTOP-4DC9UOE4/realtime/kria_top_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'kria_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:798]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'kria_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:798]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'kria_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:798]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'kria_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:798]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'kria_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:798]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'kria_top_zynq_ultra_ps_e_0_0' has 84 connections declared, but only 79 given [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:798]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top' (0#1) [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/synth/kria_top.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'kria_top_wrapper' (0#1) [D:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/hdl/kria_top_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1EAIA95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1EAIA95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_199X13E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_199X13E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_199X13E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_199X13E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_L84J6Z is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_L84J6Z is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_L84J6Z is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_L84J6Z is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module kria_top_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module kria_top_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module kria_top_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module kria_top_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module kria_top_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module kria_top_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3489.543 ; gain = 445.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3507.461 ; gain = 463.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3507.461 ; gain = 463.387
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 3507.461 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_zynq_ultra_ps_e_0_0/kria_top_zynq_ultra_ps_e_0_0/kria_top_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'kria_top_i/zynq_ultra_ps_e_0'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3537.875 ; gain = 6.137
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_zynq_ultra_ps_e_0_0/kria_top_zynq_ultra_ps_e_0_0/kria_top_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'kria_top_i/zynq_ultra_ps_e_0'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_cdma_0_0/kria_top_axi_cdma_0_0/kria_top_axi_cdma_0_0_in_context.xdc] for cell 'kria_top_i/axi_cdma_0'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_cdma_0_0/kria_top_axi_cdma_0_0/kria_top_axi_cdma_0_0_in_context.xdc] for cell 'kria_top_i/axi_cdma_0'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_bram_ctrl_0_0/kria_top_axi_bram_ctrl_0_0/kria_top_axi_bram_ctrl_0_1_in_context.xdc] for cell 'kria_top_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_bram_ctrl_0_0/kria_top_axi_bram_ctrl_0_0/kria_top_axi_bram_ctrl_0_1_in_context.xdc] for cell 'kria_top_i/axi_bram_ctrl_0'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_bram_ctrl_0_1/kria_top_axi_bram_ctrl_0_1/kria_top_axi_bram_ctrl_0_1_in_context.xdc] for cell 'kria_top_i/axi_bram_ctrl_1'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_bram_ctrl_0_1/kria_top_axi_bram_ctrl_0_1/kria_top_axi_bram_ctrl_0_1_in_context.xdc] for cell 'kria_top_i/axi_bram_ctrl_1'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_xbar_0/kria_top_xbar_0/kria_top_xbar_0_in_context.xdc] for cell 'kria_top_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_xbar_0/kria_top_xbar_0/kria_top_xbar_0_in_context.xdc] for cell 'kria_top_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_auto_ds_0/kria_top_auto_ds_0/kria_top_auto_ds_0_in_context.xdc] for cell 'kria_top_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_auto_ds_0/kria_top_auto_ds_0/kria_top_auto_ds_0_in_context.xdc] for cell 'kria_top_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_auto_pc_0/kria_top_auto_pc_0/kria_top_auto_pc_0_in_context.xdc] for cell 'kria_top_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_auto_pc_0/kria_top_auto_pc_0/kria_top_auto_pc_0_in_context.xdc] for cell 'kria_top_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_rst_ps8_0_99M_0/kria_top_rst_ps8_0_99M_0/kria_top_rst_ps8_0_99M_0_in_context.xdc] for cell 'kria_top_i/rst_ps8_0_99M'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_rst_ps8_0_99M_0/kria_top_rst_ps8_0_99M_0/kria_top_rst_ps8_0_99M_0_in_context.xdc] for cell 'kria_top_i/rst_ps8_0_99M'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_smc_0/kria_top_axi_smc_0/kria_top_axi_smc_0_in_context.xdc] for cell 'kria_top_i/axi_smc'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_smc_0/kria_top_axi_smc_0/kria_top_axi_smc_0_in_context.xdc] for cell 'kria_top_i/axi_smc'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_bram_ctrl_0_bram_0/kria_top_axi_bram_ctrl_0_bram_0/kria_top_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'kria_top_i/axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_bram_ctrl_0_bram_0/kria_top_axi_bram_ctrl_0_bram_0/kria_top_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'kria_top_i/axi_bram_ctrl_0_bram'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_bram_ctrl_1_bram_0/kria_top_axi_bram_ctrl_1_bram_0/kria_top_axi_bram_ctrl_1_bram_0_in_context.xdc] for cell 'kria_top_i/axi_bram_ctrl_1_bram'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_bram_ctrl_1_bram_0/kria_top_axi_bram_ctrl_1_bram_0/kria_top_axi_bram_ctrl_1_bram_0_in_context.xdc] for cell 'kria_top_i/axi_bram_ctrl_1_bram'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_bram_ctrl_1_0/kria_top_axi_bram_ctrl_1_0/kria_top_axi_bram_ctrl_0_1_in_context.xdc] for cell 'kria_top_i/axi_bram_ctrl_2'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_bram_ctrl_1_0/kria_top_axi_bram_ctrl_1_0/kria_top_axi_bram_ctrl_0_1_in_context.xdc] for cell 'kria_top_i/axi_bram_ctrl_2'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_bram_ctrl_2_bram_0/kria_top_axi_bram_ctrl_2_bram_0/kria_top_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'kria_top_i/axi_bram_ctrl_2_bram'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_axi_bram_ctrl_2_bram_0/kria_top_axi_bram_ctrl_2_bram_0/kria_top_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'kria_top_i/axi_bram_ctrl_2_bram'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_reg_bank_0_0/kria_top_reg_bank_0_0/kria_top_reg_bank_0_0_in_context.xdc] for cell 'kria_top_i/reg_bank_0'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_reg_bank_0_0/kria_top_reg_bank_0_0/kria_top_reg_bank_0_0_in_context.xdc] for cell 'kria_top_i/reg_bank_0'
+Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_dct_system_0_0/kria_top_dct_system_0_0/kria_top_dct_system_0_0_in_context.xdc] for cell 'kria_top_i/dct_system_0'
+Finished Parsing XDC File [d:/CE/DAKTMT/Vivado/project_dct/project_dct.gen/sources_1/bd/kria_top/ip/kria_top_dct_system_0_0/kria_top_dct_system_0_0/kria_top_dct_system_0_0_in_context.xdc] for cell 'kria_top_i/dct_system_0'
+Parsing XDC File [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3537.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3537.875 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'kria_top_i/axi_bram_ctrl_0_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'kria_top_i/axi_bram_ctrl_1_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'kria_top_i/axi_bram_ctrl_2_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3537.875 ; gain = 493.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3537.875 ; gain = 493.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/axi_cdma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/axi_bram_ctrl_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/rst_ps8_0_99M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/axi_bram_ctrl_1_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/axi_bram_ctrl_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/axi_bram_ctrl_2_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/reg_bank_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_top_i/dct_system_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3537.875 ; gain = 493.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3537.875 ; gain = 493.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module kria_top_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module kria_top_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module kria_top_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module kria_top_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module kria_top_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module kria_top_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 3537.875 ; gain = 493.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 4045.199 ; gain = 1001.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 4045.199 ; gain = 1001.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 4056.570 ; gain = 1012.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 4070.375 ; gain = 1026.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 4070.375 ; gain = 1026.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 4070.375 ; gain = 1026.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 4070.375 ; gain = 1026.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 4070.375 ; gain = 1026.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 4070.375 ; gain = 1026.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |kria_top_xbar_0                 |         1|
+|2     |kria_top_auto_ds_0              |         1|
+|3     |kria_top_auto_pc_0              |         1|
+|4     |kria_top_axi_bram_ctrl_0_0      |         1|
+|5     |kria_top_axi_bram_ctrl_0_bram_0 |         1|
+|6     |kria_top_axi_bram_ctrl_0_1      |         1|
+|7     |kria_top_axi_bram_ctrl_1_bram_0 |         1|
+|8     |kria_top_axi_bram_ctrl_1_0      |         1|
+|9     |kria_top_axi_bram_ctrl_2_bram_0 |         1|
+|10    |kria_top_axi_cdma_0_0           |         1|
+|11    |kria_top_axi_smc_0              |         1|
+|12    |kria_top_dct_system_0_0         |         1|
+|13    |kria_top_reg_bank_0_0           |         1|
+|14    |kria_top_rst_ps8_0_99M_0        |         1|
+|15    |kria_top_zynq_ultra_ps_e_0_0    |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |kria_top_auto_ds              |     1|
+|2     |kria_top_auto_pc              |     1|
+|3     |kria_top_axi_bram_ctrl_0      |     2|
+|5     |kria_top_axi_bram_ctrl_0_bram |     1|
+|6     |kria_top_axi_bram_ctrl_1      |     1|
+|7     |kria_top_axi_bram_ctrl_1_bram |     1|
+|8     |kria_top_axi_bram_ctrl_2_bram |     1|
+|9     |kria_top_axi_cdma_0           |     1|
+|10    |kria_top_axi_smc              |     1|
+|11    |kria_top_dct_system_0         |     1|
+|12    |kria_top_reg_bank_0           |     1|
+|13    |kria_top_rst_ps8_0_99M        |     1|
+|14    |kria_top_xbar                 |     1|
+|15    |kria_top_zynq_ultra_ps_e_0    |     1|
++------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 4070.375 ; gain = 1026.301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 4070.375 ; gain = 995.887
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 4070.375 ; gain = 1026.301
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 4070.375 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4119.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: b847f099
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 4124.824 ; gain = 2098.703
+INFO: [Common 17-1381] The checkpoint 'D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/synth_1/kria_top_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file kria_top_wrapper_utilization_synth.rpt -pb kria_top_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 21 20:32:22 2024...

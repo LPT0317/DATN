@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Wed Mar 20 10:58:03 2024
+# Process ID: 49224
+# Current directory: D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/multi_32_synth_1
+# Command line: vivado.exe -log multi_32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multi_32.tcl
+# Log file: D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/multi_32_synth_1/multi_32.vds
+# Journal file: D:/CE/DAKTMT/Vivado/project_dct/project_dct.runs/multi_32_synth_1\vivado.jou
+# Running On: LAPTOP-4DC9UOE4, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17024 MB
+#-----------------------------------------------------------
+source multi_32.tcl -notrace

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="u_mult_32_synth_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1710949366">
+  <File Type="PA-TCL" Name="u_mult_32.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="u_mult_32_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="u_mult_32_reports.tcl"/>
+  <File Type="RDS-RDS" Name="u_mult_32.vds"/>
+  <File Type="RDS-UTIL" Name="u_mult_32_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="u_mult_32_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="u_mult_32.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="u_mult_32_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="u_mult_32_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/u_mult_32" RelGenDir="$PGENDIR/u_mult_32">
+    <File Path="$PSRCDIR/sources_1/ip/u_mult_32/u_mult_32.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="u_mult_32"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/u_mult_32" RelGenDir="$PGENDIR/u_mult_32">
+    <File Path="$PSRCDIR/sources_1/ip/u_mult_32/u_mult_32.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="u_mult_32"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

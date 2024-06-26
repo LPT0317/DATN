@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../DATN.gen/sources_1/bd/kria_top/ipshared/ec67/hdl" --include "../../../../../DATN.gen/sources_1/bd/kria_top/ipshared/f805/hdl" --include "../../../../../DATN.gen/sources_1/bd/kria_top/ipshared/f0b6/hdl/verilog" --include "../../../../../DATN.gen/sources_1/bd/kria_top/ipshared/66be/hdl/verilog" --include "C:/Xilinx/Vivado/2023.1/data/xilinx_vip/include" \
+"testing_tb_func_synth.v" \
+"../../../../../DATN.srcs/sim_1/new/testing_tb.v" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,1 @@
+u_mult_32.vhd,vhdl,xil_defaultlib,../../../../datn_paper.gen/sources_1/ip/u_mult_32/sim/u_mult_32.vhd,

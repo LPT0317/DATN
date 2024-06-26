@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Mon Apr  8 20:52:44 2024
+# Process ID: 148868
+# Current directory: D:/CE/DAKTMT/Vivado/DATN/DATN.runs/TEST_DCT_RAM_synth_1
+# Command line: vivado.exe -log TEST_DCT_RAM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TEST_DCT_RAM.tcl
+# Log file: D:/CE/DAKTMT/Vivado/DATN/DATN.runs/TEST_DCT_RAM_synth_1/TEST_DCT_RAM.vds
+# Journal file: D:/CE/DAKTMT/Vivado/DATN/DATN.runs/TEST_DCT_RAM_synth_1\vivado.jou
+# Running On: LAPTOP-4DC9UOE4, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17024 MB
+#-----------------------------------------------------------
+source TEST_DCT_RAM.tcl -notrace

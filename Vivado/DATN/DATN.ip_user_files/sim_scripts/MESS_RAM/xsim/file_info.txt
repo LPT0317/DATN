@@ -1,0 +1,2 @@
+MESS_RAM.v,verilog,xil_defaultlib,../../../../DATN.gen/sources_1/ip/MESS_RAM/sim/MESS_RAM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

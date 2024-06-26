@@ -1,0 +1,2 @@
+SECRET_TEST.v,verilog,xil_defaultlib,../../../../DATN.gen/sources_1/ip/SECRET_TEST/sim/SECRET_TEST.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

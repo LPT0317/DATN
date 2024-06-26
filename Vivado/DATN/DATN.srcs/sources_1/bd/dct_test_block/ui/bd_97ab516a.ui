@@ -1,0 +1,41 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-794,-378",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_finish -pg 1 -lvl 4 -x 650 -y 40 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -380 -y -70 -defaultsOSRD
+preplace port port-id_rst_n -pg 1 -lvl 0 -x -380 -y -50 -defaultsOSRD
+preplace port port-id_start -pg 1 -lvl 0 -x -380 -y -30 -defaultsOSRD
+preplace port port-id_inc -pg 1 -lvl 0 -x -380 -y -250 -defaultsOSRD
+preplace port port-id_clr -pg 1 -lvl 0 -x -380 -y -230 -defaultsOSRD
+preplace portBus dct_block -pg 1 -lvl 0 -x -380 -y -10 -defaultsOSRD
+preplace portBus dct_size -pg 1 -lvl 0 -x -380 -y -90 -defaultsOSRD
+preplace portBus debug_addr -pg 1 -lvl 0 -x -380 -y 20 -defaultsOSRD
+preplace portBus debug_data0 -pg 1 -lvl 4 -x 650 -y 0 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -x 490 -y -30 -defaultsOSRD
+preplace inst test_reading_bram_0 -pg 1 -lvl 1 -x -160 -y -260 -defaultsOSRD
+preplace inst dct_processor_0 -pg 1 -lvl 1 -x -160 -y -30 -defaultsOSRD
+preplace inst bram_mux_0 -pg 1 -lvl 2 -x 190 -y -200 -defaultsOSRD
+preplace netloc clk_0_1 1 0 1 -320 -290n
+preplace netloc clr_0_1 1 0 1 N -230
+preplace netloc dct_block_0_1 1 0 1 N -10
+preplace netloc dct_processor_0_bram_mode 1 1 1 0 -180n
+preplace netloc dct_processor_0_debug_data0 1 1 3 30J -110n NJ -110n 630J
+preplace netloc dct_processor_0_finish 1 1 3 -20J -100 NJ -100 620J
+preplace netloc dct_size_0_1 1 0 1 -310 -90n
+preplace netloc debug_addr_0_1 1 0 1 N 20n
+preplace netloc inc_0_1 1 0 1 N -250
+preplace netloc rst_n_0_1 1 0 1 -300 -270n
+preplace netloc start_0_1 1 0 1 N -30
+preplace netloc bram_mux_0_BRAM_PORTA 1 2 1 350 -200n
+preplace netloc dct_processor_0_BRAM0_0 1 1 1 -10 -200n
+preplace netloc dct_processor_0_BRAM0_1 1 1 2 -10 -20 N
+preplace netloc test_reading_bram_0_BRAM0 1 1 1 0 -260n
+levelinfo -pg 1 -380 -160 190 490 650
+pagesize -pg 1 -db -bbox -sgen -550 -430 840 200
+"
+}
+0

@@ -1,0 +1,2 @@
+u_add_16.vhd,vhdl,xil_defaultlib,../../../../DATN.gen/sources_1/ip/u_add_16/sim/u_add_16.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

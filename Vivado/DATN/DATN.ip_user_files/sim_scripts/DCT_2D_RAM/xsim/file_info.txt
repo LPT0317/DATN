@@ -1,0 +1,2 @@
+DCT_2D_RAM.v,verilog,xil_defaultlib,../../../../DATN.gen/sources_1/ip/DCT_2D_RAM/sim/DCT_2D_RAM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

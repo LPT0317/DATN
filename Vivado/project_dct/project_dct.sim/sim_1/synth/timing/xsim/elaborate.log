@@ -1,0 +1,112 @@
+Vivado Simulator v2023.1.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L uvm -L xilinx_vip -L simprims_ver -L secureip --snapshot rd_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.rd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'rd_bram' does not have a parameter named ADDR_W [D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sim_1/new/rd_tb.sv:30]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'length' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sim_1/new/rd_tb.sv:34]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'dct_size' [D:/CE/DAKTMT/Vivado/project_dct/project_dct.srcs/sim_1/new/rd_tb.sv:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "rd_tb_time_synth.sdf", for root module "rd_tb/read_inst".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "rd_tb_time_synth.sdf", for root module "rd_tb/read_inst".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.BUFGCE(CE_TYPE="ASYNC",SIM_DEVIC...
+Compiling module simprims_ver.IBUFCTRL_default
+Compiling module simprims_ver.INBUF_default
+Compiling module xil_defaultlib.IBUF_UNIQ_BASE_
+Compiling module simprims_ver.latchsre_ldce
+Compiling module simprims_ver.LDCE
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.CARRY8
+Compiling module simprims_ver.DSP_ALU(ALUMODEREG=0,CARRYINREG=...
+Compiling module simprims_ver.DSP_A_B_DATA(ACASCREG=0,AREG=0,B...
+Compiling module simprims_ver.DSP_C_DATA(CREG=0)
+Compiling module simprims_ver.DSP_MULTIPLIER(USE_MULT="NONE")
+Compiling module simprims_ver.DSP_M_DATA(MREG=0)
+Compiling module simprims_ver.DSP_OUTPUT
+Compiling module simprims_ver.DSP_PREADD_DATA(ADREG=0,DREG=0,I...
+Compiling module simprims_ver.DSP_PREADD
+Compiling module xil_defaultlib.accum_32_HD1151
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.counter__xdcDup__1
+Compiling module xil_defaultlib.accum_32
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.IBUF_HD1159
+Compiling module xil_defaultlib.IBUF_HD1160
+Compiling module xil_defaultlib.IBUF_HD1161
+Compiling module xil_defaultlib.IBUF_HD1162
+Compiling module xil_defaultlib.IBUF_HD1163
+Compiling module xil_defaultlib.IBUF_HD1164
+Compiling module xil_defaultlib.IBUF_HD1165
+Compiling module xil_defaultlib.IBUF_HD1166
+Compiling module xil_defaultlib.IBUF_HD1167
+Compiling module xil_defaultlib.IBUF_HD1168
+Compiling module xil_defaultlib.IBUF_HD1169
+Compiling module xil_defaultlib.IBUF_HD1170
+Compiling module xil_defaultlib.IBUF_HD1171
+Compiling module xil_defaultlib.IBUF_HD1172
+Compiling module xil_defaultlib.IBUF_HD1173
+Compiling module xil_defaultlib.IBUF_HD1174
+Compiling module xil_defaultlib.IBUF_HD1175
+Compiling module xil_defaultlib.IBUF_HD1176
+Compiling module xil_defaultlib.IBUF_HD1177
+Compiling module xil_defaultlib.IBUF_HD1178
+Compiling module xil_defaultlib.IBUF_HD1179
+Compiling module xil_defaultlib.IBUF_HD1180
+Compiling module xil_defaultlib.IBUF_HD1181
+Compiling module xil_defaultlib.IBUF_HD1182
+Compiling module xil_defaultlib.IBUF_HD1183
+Compiling module xil_defaultlib.IBUF_HD1184
+Compiling module xil_defaultlib.IBUF_HD1185
+Compiling module xil_defaultlib.IBUF_HD1186
+Compiling module xil_defaultlib.IBUF_HD1187
+Compiling module xil_defaultlib.IBUF_HD1188
+Compiling module xil_defaultlib.IBUF_HD1189
+Compiling module xil_defaultlib.IBUF_HD1190
+Compiling module xil_defaultlib.IBUF_HD1191
+Compiling module xil_defaultlib.IBUF_HD1192
+Compiling module xil_defaultlib.IBUF_HD1193
+Compiling module xil_defaultlib.IBUF_HD1194
+Compiling module xil_defaultlib.IBUF_HD1195
+Compiling module xil_defaultlib.IBUF_HD1196
+Compiling module xil_defaultlib.IBUF_HD1197
+Compiling module xil_defaultlib.IBUF_HD1198
+Compiling module xil_defaultlib.IBUF_HD1199
+Compiling module xil_defaultlib.IBUF_HD1200
+Compiling module xil_defaultlib.IBUF_HD1201
+Compiling module xil_defaultlib.IBUF_HD1202
+Compiling module xil_defaultlib.IBUF_HD1203
+Compiling module xil_defaultlib.IBUF_HD1204
+Compiling module xil_defaultlib.IBUF_HD1205
+Compiling module xil_defaultlib.IBUF_HD1206
+Compiling module xil_defaultlib.IBUF_HD1207
+Compiling module xil_defaultlib.IBUF_HD1208
+Compiling module xil_defaultlib.IBUF_HD1209
+Compiling module xil_defaultlib.IBUF_HD1210
+Compiling module xil_defaultlib.IBUF_HD1211
+Compiling module xil_defaultlib.IBUF_HD1212
+Compiling module xil_defaultlib.IBUF_HD1213
+Compiling module xil_defaultlib.IBUF_HD1214
+Compiling module xil_defaultlib.IBUF_HD1215
+Compiling module xil_defaultlib.IBUF_HD1216
+Compiling module xil_defaultlib.IBUF_HD1217
+Compiling module xil_defaultlib.IBUF_HD1218
+Compiling module xil_defaultlib.IBUF_HD1219
+Compiling module xil_defaultlib.IBUF_HD1220
+Compiling module xil_defaultlib.rd_bram
+Compiling module xil_defaultlib.rd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot rd_tb_time_synth
